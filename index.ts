@@ -23,7 +23,9 @@ while(true){
         case 1:
             acelerar(carro);
             break;
-    
+        case 2:
+            frear(carro);
+            break;
         default:
             break;
     }
@@ -34,6 +36,12 @@ console.table(carro);
 function acelerar(veiculo: Veiculo): void{
     if(veiculo.marchaAtual != 0){
     veiculo.velocidade += veiculo.potencia*0.1;
+    console.log(veiculo.velocidade);
+}}
+
+function frear(veiculo: Veiculo): void{
+    if(veiculo.marchaAtual != 0){
+    veiculo.velocidade -= veiculo.potencia*0.1;
     console.log(veiculo.velocidade);
 }}
 
