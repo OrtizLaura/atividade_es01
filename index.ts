@@ -26,6 +26,8 @@ while(true){
         case 2:
             frear(carro);
             break;
+        case 3:
+            desligar(carro);
         default:
             break;
     }
@@ -55,3 +57,6 @@ function criaVeiculo(): Veiculo{
 }
 
 
+function desligar(): Veiculo{
+    //implementar logica
+}
